@@ -1,0 +1,100 @@
+/* 左边导航栏 */
+aside{
+	position: fixed;
+	left: 17px;
+	top: 50%;
+	margin-top: -42px;
+	z-index: 10;
+}
+aside li{
+	cursor: pointer;
+}
+aside span{
+	display: inline-block;
+	width: 12px;
+	height: 3px;
+	margin: 7px;
+	background-color: #f09da4;
+}
+aside .asdadd{
+	transition: all linear 0.5s;
+	width: 20px;
+	background-color: #d90c1c;
+}
+
+/* 底部箭头 */
+.botarr{
+	position: absolute;
+	bottom: 5%;
+	left: 50%;
+	right: 50%;
+	text-align: center;
+}
+.botpot{
+	position: absolute;
+	top: -22px;
+	margin-left: -21px;
+	width: 72px;
+	z-index: 3;
+}
+.botpot li{
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin: 0px 10px;
+	background-color: #f6f6f6;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.botarr a{
+	display: inline-block;
+	width: 30px;
+	height: 35px;
+	position: absolute;
+	top: 0px;
+	animation: arrgo linear 1s infinite;
+}
+.botarr img{
+	width: 30px;
+}
+@keyframes arrgo{
+	0%{top:0px;}
+	50%{top:10px;}
+	100%{top:0px;}
+}
+
+/* 第一屏的轮播 */
+html,body,section{
+	width: 100%;
+	height: 100%;
+}
+section>div{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+section{
+	position: relative;
+	top: 0px;
+}
+body{
+	overflow: hidden;
+}
+.screen1{
+	overflow: hidden;
+}
+.firstscr,.secscr{
+	/*float: left;*/
+}
+.firstscr{
+	width: 100%;
+	height: 100%;
+	background: url('../images/second_lx.png') no-repeat 25vw;
+	background-size: 50%; 
+	background-color: #f2613d;
+}
+.secscr{
+	width: 100%;
+	height: 100%;
+	background-color: pink;
+}
